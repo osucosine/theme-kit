@@ -28,12 +28,13 @@ function watcher() {
   // Find themes in the themes dir
 	var themes = getDirs("themes");
   // Add watcher for each theme
+	var t = [];
 	themes.forEach(theme => {
-    gulp.watch(['themes/'+ theme +'/scss/*.scss'], gulp.series(function() { return buildCss('themes/'+ theme);}) );
+    // Create an anonymous function and give it a pretty name for gulp logger
+		t[theme] = function() { return buildCss('themes/'+ theme) };
+		t[theme].displayName = 'Compiling SCSS for ' + theme;
+    gulp.watch(['themes/'+ theme +'/scss/*.scss'], gulp.series( t[theme] ));
 	});
 }
-
-exports.watch = gulp.series(buildCss, watcher);
-exports.default = gulp.series(buildCss);
 
 gulp.task('watch', watcher);

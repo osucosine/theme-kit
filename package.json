@@ -1,8 +1,8 @@
 {
   "name": "theme-kit",
-  "version": "1.0.1",
-  "description": "A starter project to build your own Bootstrap themes",
-  "repository": "https://github.com/HackerThemes/theme-kit",
+  "version": "1.0.2",
+  "description": "A fork of HackerThemes/theme-kit to support multiple sub themes in themes/ directory",
+  "repository": "https://github.com/osucosine/theme-kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,8 @@
     "themes"
   ],
   "author": "Alexander Rechsteiner",
+  "contributors": [ "Casey Dinsmore"
+  ],
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -30,6 +32,6 @@
   },
   "browserslist": [
     "last 2 version",
-    "> 2%"
+    "> 0.001%"
   ]
 }
