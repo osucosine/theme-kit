@@ -26,15 +26,12 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^1.0.0",
-<<<<<<< HEAD
     "gulp-sourcemaps": "^2.6.4"
   },
   "browserslist": [
     "last 2 version",
     "> 2%"
   ],
-=======
     "gulp-sourcemaps": "^2.6.5"
   }
->>>>>>> 5d903ff57da9711d8a4063e5be357f20d53ff958
 }
