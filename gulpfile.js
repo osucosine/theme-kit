@@ -10,7 +10,6 @@ var gulp  = require('gulp'),
   const { join } = require('path')
 
 function buildCss(path) {
-  console.log('== Compiling SCSS in', path);
 
     return gulp.src([path +'/scss/*.scss'])
         .pipe(sourcemaps.init())
